@@ -1,8 +1,8 @@
-import { Navigate, Route, Routes } from 'react-router-dom'
-import BerandaPage from './features/beranda/pages/BerandaPage'
-import NotifikasiPage from './features/notifikasi/pages/NotifikasiPage'
-import NotifikasiLayarPage from './features/notifikasi-layar/pages/NotifikasiLayarPage'
-import DetailTugasPage from './features/detail-tugas/pages/DetailTugasPage'
+import { Navigate, Route, Routes } from "react-router-dom";
+import BerandaPage from "./features/beranda/pages/BerandaPage";
+import NotifikasiPage from "./features/notifikasi/pages/NotifikasiPage";
+import NotifikasiLayarPage from "./features/notifikasi-layar/pages/NotifikasiLayarPage";
+import DetailTugasPage from "./features/detail-tugas/pages/DetailTugasPage";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
