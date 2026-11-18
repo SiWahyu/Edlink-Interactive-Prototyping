@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-roboto: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #16a34a;
+  --color-header: #1a9a2a;
+  --color-owl: #22a04b;
+  --color-beak: #f5a524;
+  --color-task: #1f87a8;
+  --color-chip: #e7f6ea;
+  --color-notify: #f5a524;
+  --color-materi: #4f46c8;
+  --color-materi-soft: #e9e9fb;
+  --color-warn: #fdf3c7;
+  --color-warn-fg: #a16207;
+  --color-lock: oklch(0.27 0.005 260);
+  --color-lock-card: oklch(0.45 0.005 260 / 0.5);
+  --color-lock-line: oklch(1 0 0 / 0.16);
+  --text-note: 0.9375rem;
+  --text-note--line-height: 1.5;
+}
+
+.hexagon {
+  clip-path: polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%);
+}
+
+.bg-gold {
+  background-image: linear-gradient(160deg, #f8d74a, #e5a12a 55%, #a8661d);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-24px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+}
+
+.drop-in {
+  animation: drop-in 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.fade-out {
+  animation: fade-out 0.3s ease-in forwards;
+}
